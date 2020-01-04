@@ -1,0 +1,11 @@
+<div style="color:orange;margin-left:30px;"><%= flash[:notice] %></div>
+
+
+
+
+<p><h5 style="display: inline;">title: </h5><%= @book.title %></p>
+<p><h5 style="display: inline;">Body: </h5><%= @book.body %></p><br>
+
+<%= link_to "Edit", edit_book_path(@book) %> |
+<%= link_to "Back", books_path %>
+
